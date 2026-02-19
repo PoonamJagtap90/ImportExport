@@ -43,13 +43,14 @@ export function Certifications() {
       image: 'src/Images/ISO_9001-2015.svg-removebg-preview (1).png',
       title: 'ISO CERTIFICATE',
       description: 'International Organization for Standardization',
-      pdf: ''
+      pdf: 'src/app/pages/Certificates/ISO_9001-2015.svg-removebg-preview (2).png'
     },
     {
       image: 'src/Images/DUNS Number.png',
       title: 'D-U-N-S NUMBER',
       description: '',
-      pdf: 'src/app/pages/Certificates/D-U-N-S 1.pdf'
+      pdf: 'src/app/pages/Certificates/D-U-N-S 1.pdf',
+      buttonText: 'View Number'
     },
   ];
 
@@ -93,9 +94,11 @@ export function Certifications() {
                 <p className="text-[15px] text-gray-600 leading-relaxed text-center">
                   {cert.description}
                 </p><br/>
-                <button className="inline-flex items-center gap-2 text-[#c1a23c] hover:text-[#a8912f] font-medium transition-colors"
+                <button 
+                className="inline-flex items-center gap-2 text-[#c1a23c] hover:text-[#a8912f] font-medium transition-colors"
                  onClick={() => window.open(cert.pdf, '_blank')}>
-                 view Certificate
+                 {/*view Certificate*/}
+                 {cert.buttonText || "View Certificate"}
                 </button>
               </div>
             );

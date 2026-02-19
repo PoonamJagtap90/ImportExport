@@ -127,7 +127,7 @@ export function Contact() {
               <div className="space-y-2 text-[15px] text-gray-700">
                 <div className="flex justify-between">
                   <span>Monday - Friday:</span>
-                  <span className="font-medium">9:00 AM - 6:00 PM</span>
+                  <span className="font-medium">9:30 AM - 6:30 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Saturday & Sunday:</span>
@@ -273,7 +273,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#c1a23c] text-white px-6 py-3 rounded-lg"
+                  className="w-full bg-[#c1a23c] text-white px-6 py-3 rounded-lg "
                 >
                   {loading ? "Sending..." : "Send Enquiry"}
                 </button>
