@@ -31,7 +31,7 @@ export function Home() {
 
           backgroundImage:
 
-            "url('src/Images/Homebackgroundimage.jpg')", // move your image to public/images
+            "url('src/Images/shipping-port-sunset-cargo-airplanes-trucks.jpg')", // move your image to public/images
 
         }}
 ></div>
@@ -43,7 +43,7 @@ export function Home() {
 <div className="relative max-w-6xl mx-auto px-6 text-white">
 <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
 
-                        Import Export Services
+                         Export Import Services
 </h1>
  
         <p className="text-lg md:text-xl text-gray-200 max-w-2xl mb-8 text-center">
@@ -149,31 +149,7 @@ export function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-              
-              <div>
-                <img src="src\Images\Import.png" 
-     alt="About GlobalTrade" 
-     style={{ width: "200px", height: "200px" }} 
-   />
-              </div>
-              <div>
-              <h3 className="text-[24px] font-semibold text-[#0b2d4d] mb-3">
-                Import Services
-              </h3>
-              <p className="text-[15px] text-gray-600 mb-6 leading-relaxed">
-                Comprehensive import solutions with supplier coordination, customs clearance, 
-                and freight handling.
-              </p>
-              <Link
-                to="/services/import"
-                className="inline-flex items-center gap-2 text-[#c1a23c] hover:text-[#a8912f] font-medium transition-colors"
-              >
-                View Details
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              </div>
-            </div>
+            
 
            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
               
@@ -189,6 +165,32 @@ export function Home() {
               </h3>
               <p className="text-[15px] text-gray-600 mb-6 leading-relaxed">
                 End-to-end export support including documentation, quality inspection, and shipment planning.
+              </p>
+              <Link
+                to="/services/export"
+                className="inline-flex items-center gap-2 text-[#c1a23c] hover:text-[#a8912f] font-medium transition-colors"
+              >
+                View Details
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+              
+              <div>
+                <img src="src\Images\Import.png" 
+     alt="About GlobalTrade" 
+     style={{ width: "200px", height: "200px" }} 
+   />
+              </div>
+              <div>
+              <h3 className="text-[24px] font-semibold text-[#0b2d4d] mb-3">
+                Import Services
+              </h3>
+              <p className="text-[15px] text-gray-600 mb-6 leading-relaxed">
+                Comprehensive import solutions with supplier coordination, customs clearance, 
+                and freight handling.
               </p>
               <Link
                 to="/services/import"

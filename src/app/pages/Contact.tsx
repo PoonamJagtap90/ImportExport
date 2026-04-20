@@ -40,6 +40,30 @@ export function Contact() {
       console.log('Server response:', response.data);
       setSubmitted(true);
 
+      // 👉 Send data to Zoho
+ if (window.$zoho?.salesiq) {
+
+  // Set visitor basic details
+  window.$zoho.salesiq.visitor.name(formData.Name);
+  window.$zoho.salesiq.visitor.email(formData.email);
+  window.$zoho.salesiq.visitor.contactnumber(formData.phone);
+
+  // Attach full form data as custom visitor info
+  window.$zoho.salesiq.visitor.info({
+    Company_Name: formData.companyName,
+    Service_Selected: formData.service,
+    Enquiry_Message: formData.message,
+    Form_Submitted: "Yes",
+    Form_Source: "Website Contact Page"
+  });
+
+  // Open chat window
+  window.$zoho.salesiq.floatwindow.visible("show");
+
+}else{
+  console.log('fgdgdgfd')
+}
+
       // Reset form after 3 seconds
       setTimeout(() => {
         setFormData({
@@ -68,7 +92,7 @@ export function Contact() {
         <div className="mb-12">
           <h1 className="text-[48px] font-semibold text-[#0b2d4d] mb-4">Contact Us</h1>
           <div className="w-20 h-1 bg-[#c1a23c]"></div>
-          <p className="text-[18px] text-gray-600 mt-6 max-w-3xl">
+          <p className="text-[18px] text-gray-600 mt-6 max-w-full">
             Get in touch with our team for inquiries, quotes, or support. We're here to help you succeed in international trade.
           </p>
         </div>
@@ -87,6 +111,14 @@ export function Contact() {
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-[#c1a23c]" />
+ <div className="flex justify-center mr-4">
+                   <img src="src/Images/pin.png" 
+     alt="About GlobalTrade" 
+     style={{ width: "50px", height: "30px" }}
+     //className="rounded-2xl shadow-lg w-full object-cover" 
+   /> 
+                </div>
+
                 </div>
                 <div>
                   <h3 className="text-[18px] font-semibold text-[#0b2d4d] mb-1">Office Address</h3>
@@ -101,11 +133,19 @@ export function Contact() {
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6 text-[#c1a23c]" />
+                  <div className="flex justify-center mr-4">
+                   <img src="src/Images/phone-call.png" 
+     alt="About GlobalTrade" 
+     style={{ width: "50px", height: "30px" }}
+     //className="rounded-2xl shadow-lg w-full object-cover" 
+   /> 
+                </div>
+                  
                 </div>
                 <div>
-                  <h3 className="text-[18px] font-semibold text-[#0b2d4d] mb-1">Phone Number</h3>
-                  <p className="text-[15px] text-gray-600">+91 +91 8446580352/9022065517/8600099171</p>
-                  <p className="text-[14px] text-gray-500 mt-1"><b>WhatsApp:</b>+91 8446580352/9022065517/8600099171</p>
+                  <h3 className="text-[18px] font-semibold text-[#0b2d4d] mb-1">WhatsApp/Phone Number</h3>
+                  <p className="text-[15px] text-gray-600">+91 8446580352 / 9022065517 / 8600099171</p>
+                  
                 </div>
               </div>
 
@@ -113,10 +153,18 @@ export function Contact() {
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Mail className="w-6 h-6 text-[#c1a23c]" />
+                   <div className="flex justify-center mr-4">
+                   <img src="src/Images/email.png" 
+     alt="About GlobalTrade" 
+     style={{ width: "30px", height: "30px" }}
+     //className="rounded-2xl shadow-lg w-full object-cover" 
+   /> 
+                </div>
                 </div>
                 <div>
                   <h3 className="text-[18px] font-semibold text-[#0b2d4d] mb-1">Email Address</h3>
-                  <p className="text-[15px] text-gray-600">sales@theinfinitysolutions.co</p>
+                  <a href='mailto:sales@theinfinitysolutions.co'><p className="text-[15px] text-gray-600">sales@theinfinitysolutions.co</p></a>
+                  <a href='mailto:yash.paranjape@theinfinitysolutions.co'><p className="text-[15px] text-gray-600">yash.paranjape@theinfinitysolutions.co</p></a>
                 </div>
               </div>
             </div>
@@ -273,7 +321,7 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#c1a23c] text-white px-6 py-3 rounded-lg "
+                  className="w-full bg-[#c1a23c] text-white px-6 py-3 cursor-pointer rounded-lg"
                 >
                   {loading ? "Sending..." : "Send Enquiry"}
                 </button>

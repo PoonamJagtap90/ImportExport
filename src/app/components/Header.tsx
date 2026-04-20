@@ -23,14 +23,13 @@ export function Header() {
             {/*<div className="w-10 h-10 bg-[#0b2d4d] rounded-lg flex items-center justify-center">
               <Globe className="w-6 h-6 text-white" />
             </div>*/}
-           <div><img src="src\Images\infinity-logo-png.png" className="h-10 w-auto" 
-           /> </div> 
+           <div><img src="src/Images/infinity-logo-png.png" className="h-10 w-auto"/> </div> 
             <div>
               <div className="text-[22px] font-semibold text-[#0b2d4d] leading-tight">
                 Infinity Solutions
               </div>
               <div className="text-[11px] text-[#c1a23c] leading-tight text-center">
-                Import & Export
+                Export & Import 
               </div>
             </div>
           </Link>

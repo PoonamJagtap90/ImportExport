@@ -19,7 +19,7 @@ export function Certifications() {
       image: 'src/Images/FIEO_Logo_Trans-removebg-preview.png',
       title: 'FIEO CERTIFICATE',
       description: 'Federation of Indian Export Organisations (FIEO)',
-      pdf: 'src/app/pages/Certificates/Fieo Certificate.pdf'
+      pdf: 'src/app/pages/Certificates/Fieo Certificate-2026.pdf'
     },
     {
       image: 'src/Images/Fssai-removebg-preview.png',
@@ -37,18 +37,18 @@ export function Certifications() {
       image: 'src/Images/MCCI-removebg-preview.png',
       title: 'MCCIA CERTIFICATE',
       description: 'Mahratta Chamber of Commerce, Industries and Agriculture',
-      pdf: 'src/app/pages/Certificates/MCCI - Membership certificate.pdf'
+      pdf: 'src/app/pages/Certificates/MCCIA_INFINITY SOLUTIONS.pdf'
     },
     {
-      image: 'src/Images/ISO_9001-2015.svg-removebg-preview (1).png',
+      image: 'src/Images/ISO_9001-2015.svg-removebg-preview (3).png',
       title: 'ISO CERTIFICATE',
       description: 'International Organization for Standardization',
-      pdf: 'src/app/pages/Certificates/ISO_9001-2015.svg-removebg-preview (2).png'
+      pdf: 'src/app/pages/Certificates/ISO Certificate.pdf'
     },
     {
       image: 'src/Images/DUNS Number.png',
       title: 'D-U-N-S NUMBER',
-      description: '',
+      description: 'Data Universal Numbering System',
       pdf: 'src/app/pages/Certificates/D-U-N-S 1.pdf',
       buttonText: 'View Number'
     },

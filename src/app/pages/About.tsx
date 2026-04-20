@@ -15,34 +15,32 @@ export function About() {
  {/* LEFT CONTENT */} 
  <div className="flex w-full">   
   <div className="flex items-center px-16">
-    <p className="text-[16px] text-gray-600 leading-relaxed mb-29 w-[550px]"> 
-   Established in 2019 in the industrial hub of Pune, Infinity Solutions delivers a superior standard of precision and strategic partnership. We bridge the gap between the bold agility of a modern enterprise and the seasoned reliability of industry veterans. 
-   hile the Infinity brand is contemporary, our foundation is rock-solid. Our leadership team brings over 18 years of high-level industry expertise to every project. 
-   We don't just execute; we lead the business acumen and stability that only decades of experience can provide. 
+    <p className="text-[16px] text-gray-600 leading-relaxed mb-29 w-[550px] text-justify"> 
+    Infinity Solutions is a growing service provider in the Export Import (EXIM) space, offering structured and reliable support to businesses looking to expand their global reach. Established recently, our EXIM division has been built with a clear focus on professionalism, compliance, and practical execution.
+We work closely with manufacturers, suppliers, and international partners to facilitate smooth trade operations right from identifying opportunities to supporting documentation, coordination, and process management. Our approach is grounded in attention to detail, responsiveness, and a strong understanding of evolving trade requirements.
    </p>
   </div>
   </div> 
  
  <div> 
    {/* RIGHT IMAGE */} 
-   <img src="src\Images\about1.jpeg" 
+   <img src="src/Images/cargo-ship-navigating-ocean.jpg" 
      alt="About GlobalTrade" 
      style={{ width: "500px", height: "350px" }}
      className="rounded-2xl w-full h-full object-cover" 
    /> 
  </div>
  <div className="flex items-center px-16">
-  <p className="text-[16px] text-gray-600 leading-relaxed mb-50"> 
-      <b>The Power of Precision </b><br />
-      We have scaled our operations through a disciplined, step-by-step commitment to excellence.
-Our growth is built on a simple blueprint: No shortcuts. Total transparency. 
-Absolute trust. At Infinity Solutions, operational excellence isn't a goal—it's our baseline. 
+  <p className="text-[16px] text-gray-600 leading-relaxed mb-50 text-justify"> 
+      
+     While we are at an early stage of this journey, our commitment remains consistent: to deliver dependable service, maintain transparency, and build long-term partnerships with our clients and associates across markets.
+At Infinity Solutions, we aim to simplify global trade by being a reliable and efficient link between businesses and international opportunities.
 
 </p>
  </div>
  <div className="pb-10"> 
    {/* RIGHT IMAGE */} 
-   <img src="src/Images/about2.jpg" 
+   <img src="src/Images/transport-logistics-products (1).jpg" 
      alt="About GlobalTrade" 
      style={{ width: "500px", height: "250px" }}
      className="rounded-2xl w-full h-full object-cover" 
@@ -67,9 +65,9 @@ Absolute trust. At Infinity Solutions, operational excellence isn't a goal—it'
               <Eye className="w-8 h-8 text-[#c1a23c]" />
               
               <div className="flex justify-center mr-4">
-                   <img src="src/Images/shared-vision.png" 
+                   <img src="src/Images/Vision 1.png" 
      alt="About GlobalTrade" 
-     style={{ width: "50px", height: "40px" }}
+     style={{ width: "110px", height: "90px" }}
      //className="rounded-2xl shadow-lg w-full object-cover" 
    /> 
                 </div>
@@ -86,9 +84,9 @@ Absolute trust. At Infinity Solutions, operational excellence isn't a goal—it'
               <Target className="w-8 h-8 text-[#c1a23c]" />
 
                 <div className="flex justify-center mr-4">
-                   <img src="src/Images/mission (1).png" 
+                   <img src="src/Images/Mission 1.png" 
      alt="About GlobalTrade" 
-     style={{ width: "50px", height: "30px" }}
+     style={{ width: "110px", height: "90px" }}
      //className="rounded-2xl shadow-lg w-full object-cover" 
    /> 
                 </div>
@@ -103,7 +101,7 @@ Absolute trust. At Infinity Solutions, operational excellence isn't a goal—it'
 
         {/* Additional Info */}
         <div className="mt-16 bg-gray-50 rounded-xl p-10">
-        <h2 className="text-[32px] font-semibold text-[#0b2d4d] flex justify-center mb-4">Why Work With Us?</h2>
+        <h2 className="text-[32px] font-semibold text-[#0b2d4d] flex justify-center mb-4">Why Choose Us ?</h2>
 <h3 className="text-[12px] text-black-400 mb-10 flex justify-center">We deliver reliable, end-to-end trade solutions focused on quality, efficiency, and global standards.</h3>
           <div className="grid md:grid-cols-3 gap-12">
           
@@ -115,9 +113,11 @@ Absolute trust. At Infinity Solutions, operational excellence isn't a goal—it'
     className="w-12 h-12 object-cover rounded"/>
   <p className="text-gray-600 text-[16px]">
     <span className="font-bold block mb-1">
-      Reliable Supply & On-Time Delivery
+       {/* Reliable Supply & On-Time Delivery */}
+       Company Culture
     </span>
-    We deliver reliable, end-to-end trade solutions.
+    {/*We deliver reliable, end-to-end trade solutions. */}
+    We operate with honesty and strong ethical values, building long-term partnerships based on trust and reliability.
   </p>  
 </div>
 <br/>
@@ -131,9 +131,11 @@ Absolute trust. At Infinity Solutions, operational excellence isn't a goal—it'
   />
   <p className="text-gray-600 text-[16px]">
     <span className="font-bold block mb-1">
-      Simplified Global Logistics
+      {/*Simplified Global Logistics*/}
+      Assured Quality Service
     </span>
-    End-to-end shipping and customs solutions for hassle-free trade.
+    {/*End-to-end shipping and customs solutions for hassle-free trade.*/}
+    We ensure consistent quality and dependable service in every shipment you receive. 
   </p>
 </div>
 </div>
@@ -157,9 +159,11 @@ Absolute trust. At Infinity Solutions, operational excellence isn't a goal—it'
     className="w-12 h-12 object-cover rounded"/>
   <p className="text-gray-600 text-[16px]">
     <span className="font-bold block mb-1">
-      Assured Quality & Compliance
+      {/*Assured Quality & Compliance*/}
+      Continuous Improvement & Regulatory Awareness 
     </span>
-    Products undergo strict quality checks and meet international standards.
+    {/*Products undergo strict quality checks and meet international standards.*/}
+    We continuously improve our processes while staying up to date with global regulations to ensure compliance and efficiency. 
   </p>  
 </div>
 <br/>
@@ -173,9 +177,11 @@ Absolute trust. At Infinity Solutions, operational excellence isn't a goal—it'
   />
   <p className="text-gray-600 text-[16px]">
     <span className="font-bold block mb-1">
+      {/*Transparency & Dedicated Support*/}
       Transparency & Dedicated Support
     </span>
-    Clear pricing, complete documentation, and account managers for every shipment.
+    {/*Clear pricing, complete documentation, and account managers for every shipment.*/}
+    We maintain clear communication and provide dedicated support to build strong, long-term partnerships. 
   </p>
 </div>
 </div>

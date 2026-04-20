@@ -14,12 +14,31 @@ import { Contact } from './pages/Contact';
 import {WhyChooseUs} from "./pages/WhyChooseUs";
 import { ScrollToTop } from "./pages/ScrollToTop";
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
  
 
 
 
 export default function App() {
- 
+
+  useEffect(() => {
+    if (document.getElementById("zsiqscript")) return;
+
+    window.$zoho = window.$zoho || {};
+    window.$zoho.salesiq = window.$zoho.salesiq || {
+      ready: function () {}
+    };
+
+    const script = document.createElement("script");
+    script.id = "zsiqscript";
+    script.src =
+      "https://salesiq.zohopublic.in/widget?wc=siqe847e3c4baba46abaf4dd500c4556e75e4ac48db03414d8168ab0f58be7723075ec5c9a0e79b078decd8a74e7fe289c1";
+    script.defer = true;
+
+    document.body.appendChild(script);
+
+  }, []);
+
   return (
     <Router>
       <Layout>

@@ -16,11 +16,11 @@ export function Footer() {
            /> </div> 
               <div>
                 <div className="text-[18px] font-semibold">Infinity Solutions</div>
-                <div className="text-[11px] text-[#c1a23c]">Import & Export</div>
+                <div className="text-[11px] text-[#c1a23c]">Export & Import </div>
               </div>
             </div>
             <p className="text-[14px] text-gray-300 leading-relaxed">
-              We specialize in seamless import and export services, connecting global markets with efficiency and reliability. 
+              We specialize in seamless Export and Import services, connecting global markets with efficiency and reliability. 
             </p>
           </div>
 
@@ -57,12 +57,12 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link to="/services/import" className="text-[14px] text-gray-300 hover:text-[#c1a23c] transition-colors">
-                  Import Services
+                  Export Services
                 </Link>
               </li>
               <li>
                 <Link to="/services/export" className="text-[14px] text-gray-300 hover:text-[#c1a23c] transition-colors">
-                  Export Services
+                   Import Services
                 </Link>
               </li>
               <li>
@@ -105,7 +105,7 @@ export function Footer() {
 
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
           <p className="text-[14px] text-gray-400">
-            © 2026 Infinity Solutions Import & Export. All rights reserved.
+            © 2026 Infinity Solutions Export & Import. All rights reserved.
           </p>
         </div>
       </div>

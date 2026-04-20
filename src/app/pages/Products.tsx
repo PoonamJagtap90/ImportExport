@@ -4,36 +4,22 @@ export function Products() {
   const products = [
     {
       
-      image: 'src/Images/Agricultural.jpg',
+      image: 'src/Images/Agriculture.jpg',
       title: 'Agricultural Products',
       description: 'Grains, pulses, spices, and organic farming produce',
       
     },
     {
       image: 'src/Images/FMCG Products.png',
-      title: 'Food & FMCG',
+      title: 'FMCG',
       description: 'Packaged foods, beverages, and consumer goods',
     },
     {
-      image: 'src/Images/pharma_cosmetic.svg',
-      title: 'Industrial Raw Materials',
+      image: 'src/Images/Generator.png',
+      title: 'Electrical Equipment Supplies',
       description: 'Metals, chemicals, polymers, and construction materials',
     },
-    {
-      image: 'src/Images/Material Handling Equipment.jpeg',
-      title: 'Machinery & Equipment',
-      description: 'Industrial machinery, tools, and technical equipment',
-    },
-    {
-      image: 'src/Images/Power & Utility Equipment.jpg',
-      title: 'Consumer Goods',
-      description: 'Textiles, electronics, home appliances, and lifestyle products',
-    },
-    {
-      image: 'src/Images/Automobile Spare Parts.jpg',
-      title: 'Automobile Spare Parts',
-      description: 'Precision components that meet OEM standards',
-    },
+
   ];
 
   return (
@@ -46,7 +32,7 @@ export function Products() {
           </h1>
           <div className="w-20 h-1 bg-[#c1a23c]"></div>
           <p className="text-[18px] text-gray-600 mt-6 max-w-3xl">
-            We facilitate trade across diverse product categories, connecting businesses with quality suppliers and buyers worldwide.
+            A range of carefully sourced products designed to meet international quality and market requirements.
           </p>
         </div>
 
