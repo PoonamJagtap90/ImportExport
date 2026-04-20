@@ -159,6 +159,7 @@ export function Contact() {
      style={{ width: "30px", height: "30px" }}
      //className="rounded-2xl shadow-lg w-full object-cover" 
    /> 
+   
                 </div>
                 </div>
                 <div>
