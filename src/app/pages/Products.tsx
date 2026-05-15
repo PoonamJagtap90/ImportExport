@@ -19,6 +19,11 @@ export function Products() {
       title: 'Electrical Equipment Supplies',
       description: 'Metals, chemicals, polymers, and construction materials',
     },
+     {
+      image: 'src/Images/hugo-clement-JGtPrdnMgQc-unsplash.jpg',
+      title: 'High-quality A-grade thrift clothing and cream bales',
+      description: 'We ensure that each bale contains garments with strong market demand and good visual appeal for thrift stores and wholesale markets.',
+    },
 
   ];
 

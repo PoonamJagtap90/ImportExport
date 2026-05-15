@@ -6,7 +6,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "build": "npx vite build",
-    "dev": "vite"
+    "dev": "vite",
+    "start": "node server.js"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -44,12 +45,17 @@
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "cmdk": "1.1.1",
+    "cors": "^2.8.6",
     "date-fns": "3.6.0",
+    "dotenv": "^17.4.2",
     "embla-carousel-react": "8.6.0",
+    "express": "^5.2.1",
+    "handlebars": "^4.7.9",
     "input-otp": "1.4.2",
     "lucide-react": "0.487.0",
     "motion": "12.23.24",
     "next-themes": "0.4.6",
+    "nodemailer": "^8.0.7",
     "react-day-picker": "8.10.1",
     "react-dnd": "16.0.1",
     "react-dnd-html5-backend": "16.0.1",

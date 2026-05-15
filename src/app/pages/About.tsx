@@ -26,7 +26,7 @@ We work closely with manufacturers, suppliers, and international partners to fac
    {/* RIGHT IMAGE */} 
    <img src="src/Images/cargo-ship-navigating-ocean.jpg" 
      alt="About GlobalTrade" 
-     style={{ width: "500px", height: "350px" }}
+     style={{ width: "500px", height: "400px" }}
      className="rounded-2xl w-full h-full object-cover" 
    /> 
  </div>
@@ -42,7 +42,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
    {/* RIGHT IMAGE */} 
    <img src="src/Images/transport-logistics-products (1).jpg" 
      alt="About GlobalTrade" 
-     style={{ width: "500px", height: "250px" }}
+     style={{ width: "500px", height: "350px" }}
      className="rounded-2xl w-full h-full object-cover" 
    /> 
  </div>

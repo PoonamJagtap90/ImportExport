@@ -32,6 +32,7 @@ export function Contact() {
     try {
       // Send actual form data
       const response = await axios.post(
+        //'http://theinfinitysolutions.co/api/contact',
         'http://localhost:5000/api/contact', // Replace with your backend route
         formData
         
