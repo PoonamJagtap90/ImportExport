@@ -20,7 +20,7 @@ export function Home() {
 
  
 
-<section className="relative h-[85vh] flex items-center">
+<section className="relative min-h-[70vh] md:min-h-[85vh] flex items-center">
  
       {/* Background Image */}
 <div
@@ -40,8 +40,8 @@ export function Home() {
 <div className="absolute inset-0 bg-[#0f2742]/80"></div>
  
       {/* Content */}
-<div className="relative max-w-6xl mx-auto px-6 text-white">
-<h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+<div className="relative max-w-6xl mx-auto px-4 md:px-6 text-white text-center">
+<h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-6">
 
                          Export Import Services
 </h1>
@@ -54,7 +54,7 @@ export function Home() {
         {/* Buttons */}
         
 
-<div className="flex gap-4 flex justify-center">
+<div className="flex flex-col sm:flex-row gap-4 justify-center">
 
 <Link
   to="/contact"
@@ -73,13 +73,13 @@ export function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-14 h-14 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-7 h-7 text-[#c1a23c] items-centre" />
                 <div className="flex justify-center mr-4">
                  <img src="src/Images/End-to-end support.png" 
                 alt="About GlobalTrade" 
-                style={{ width: "45px", height: "30px" }}
+                className="w-10 h-auto"
                 /> 
                 </div>
                 
@@ -92,13 +92,13 @@ export function Home() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-14 h-14 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
                 <Globe2 className="w-7 h-7 text-[#c1a23c]" />
 <div className="flex justify-center mr-4">
    <img src="src/Images/Global Trade.png" 
      alt="About GlobalTrade" 
-     style={{ width: "45px", height: "30px" }}
+     className="w-10 h-auto"
      //className="rounded-2xl shadow-lg w-full object-cover" 
    /> 
 </div>
@@ -113,13 +113,13 @@ export function Home() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-14 h-14 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-7 h-7 text-[#c1a23c]"/>
                 <div className="flex justify-center mr-4">
                    <img src="src/Images/Compliance.png" 
      alt="About GlobalTrade" 
-     style={{ width: "45px", height: "30px" }}
+    className="w-10 h-auto"
      //className="rounded-2xl shadow-lg w-full object-cover" 
    /> 
                 </div>
@@ -148,19 +148,19 @@ export function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
 
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
               
               <div>
                 <img src="src\Images\Export.png" 
      alt="About GlobalTrade" 
-     style={{ width: "200px", height: "200px" }} 
+     className="w-full max-w-[200px] h-auto mx-auto" 
    />
               </div>
               <div>
-              <h3 className="text-[24px] font-semibold text-[#0b2d4d] mb-3">
+              <h3 className="text-xl md:text-2xl font-semibold text-[#0b2d4d] mb-3">
                Export Services
               </h3>
               <p className="text-[15px] text-gray-600 mb-6 leading-relaxed">
@@ -176,16 +176,16 @@ export function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
               
               <div>
                 <img src="src\Images\Import.png" 
      alt="About GlobalTrade" 
-     style={{ width: "200px", height: "200px" }} 
+className="w-full max-w-[200px] h-auto mx-auto"
    />
               </div>
               <div>
-              <h3 className="text-[24px] font-semibold text-[#0b2d4d] mb-3">
+              <h3 className="text-xl md:text-2xl font-semibold text-[#0b2d4d] mb-3">
                 Import Services
               </h3>
               <p className="text-[15px] text-gray-600 mb-6 leading-relaxed">

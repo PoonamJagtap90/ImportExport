@@ -32,8 +32,8 @@ export function Contact() {
     try {
       // Send actual form data
       const response = await axios.post(
-        //'http://theinfinitysolutions.co/api/contact',
-        'http://localhost:5000/api/contact', // Replace with your backend route
+        'http://theinfinitysolutions.co/api/contact',
+        //'http://localhost:5000/api/contact', // Replace with your backend route
         formData
         
       );
@@ -251,62 +251,74 @@ export function Contact() {
                   className="w-full px-4 py-3 border rounded-lg"
                 />
                 
-                <select
-                  name="service"
-                  value={formData.service}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border rounded-lg"
-                >
-                  <option value="">Select a service</option>
-                  <option value="Food & Beverage">Food & Beverage</option>
-                  <option value="Agriculture">Agriculture</option>
-                  <option value="Sports & Entertainment">Sports & Entertainment</option>
-                  <option value="Fashion & Apparel & Fabrics">Fashion & Apparel & Fabrics</option>
-                  <option value="Timepieces, Jewellery & Eyewear">Timepieces, Jewellery & Eyewear</option>
-                  <option value="Construction & Real Estate">Construction & Real Estate</option>
-                  <option value="Home & Garden">Home & Garden</option>
-                  <option value="Business & Industrial">Business & Industrial</option>
-                  <option value="Gifts & Decorations">Gifts & Decorations</option>
-                  <option value="Toys & Hobbies">Toys & Hobbies</option>
-                  <option value="Collectibles & Art">Collectibles & Art</option>
-                  <option value="Beauty & Personal Care">Beauty & Personal Care</option>
-                  <option value="Electrical Equipment Supplies">Electrical Equipment Supplies</option>
-                  <option value="Office & School Supplies">Office & School Supplies</option>
-                  <option value="Health & Medical">Health & Medical</option>
-                  <option value="Measurement & Analysis Instruments">Measurement & Analysis Instruments</option>
-                  <option value="Mobile Electronics">Mobile Electronics</option>
-                  <option value="Minerals & Metallurgy">Minerals & Metallurgy</option>
-                  <option value="Packaging & Printing">Packaging & Printing</option>
-                  <option value="Rubber & Plastics">Rubber & Plastics</option>
-                  <option value="Security & Protection">Security & Protection</option>
-                  <option value="Service Equipment">Service Equipment</option>
-                  <option value="Shoes & Footwear Accessories">Shoes & Footwear Accessories</option>
-                  <option value="Smart Living Electronics">Smart Living Electronics</option>
-                  <option value="Sporting Goods">Sporting Goods</option>
-                  <option value="Telecommunication">Telecommunication</option>
-                  <option value="Tools">Tools</option>
-                  <option value="Transportation">Transportation</option>
-                  <option value="Books, Movies & Music">Books, Movies & Music</option>
-                  <option value="Entertainment Services">Entertainment Services</option>
-                  <option value="Construction & Related Engineering Service">Construction & Related Engineering Service</option>
-                  <option value="Health-related & Social services">Health-related & Social services</option>
-                  <option value="Tourism & Travel-Related Services">Tourism & Travel-Related Services</option>
-                  <option value="Educational & Environmental Services">Educational & Environmental Services</option>
-                  <option value="Distribution & Wholesale Services">Distribution & Wholesale Services</option>
-                  <option value="Automotives & Motors">Automotives & Motors</option>
-                  <option value="Business Services">Business Services</option>
-                  <option value="Chemicals">Chemicals</option>
-                  <option value="Computer Hardware & Software">Computer Hardware & Software</option>
-                 
-                 
-                      {/*Add more options
-                  <option value="import">Agriculture</option>
-                  <option value="export">Sports & Entertainment</option>
-                  <option value="logistics">Fashion & Apparel & Fabrics</option>
-                  <option value="general">Food & Beverage</option>*/}
-                  
-                </select>
+                <div className="relative">
+  <select
+    name="service"
+    value={formData.service}
+    onChange={handleChange}
+    required
+    className="
+      w-full
+      px-4 py-3
+      border border-gray-300
+      rounded-lg
+      text-sm sm:text-base
+      bg-white
+      focus:outline-none
+      focus:ring-2
+      focus:ring-[#c1a23c]
+      max-h-14
+    "
+    size={1}
+  >
+    <option value="">Select a service</option>
+
+    <optgroup label="Products">
+      <option value="Food & Beverage">Food & Beverage</option>
+      <option value="Agriculture">Agriculture</option>
+      <option value="Fashion & Apparel & Fabrics">
+        Fashion & Apparel & Fabrics
+      </option>
+      <option value="Electrical Equipment Supplies">
+        Electrical Equipment Supplies
+      </option>
+      <option value="Chemicals">Chemicals</option>
+      <option value="Computer Hardware & Software">
+        Computer Hardware & Software
+      </option>
+    </optgroup>
+
+    <optgroup label="Services">
+      <option value="Business Services">Business Services</option>
+      <option value="Transportation">Transportation</option>
+      <option value="Tourism & Travel-Related Services">
+        Tourism & Travel-Related Services
+      </option>
+      <option value="Educational & Environmental Services">
+        Educational & Environmental Services
+      </option>
+      <option value="Distribution & Wholesale Services">
+        Distribution & Wholesale Services
+      </option>
+    </optgroup>
+
+    <optgroup label="Industries">
+      <option value="Construction & Real Estate">
+        Construction & Real Estate
+      </option>
+      <option value="Health & Medical">Health & Medical</option>
+      <option value="Minerals & Metallurgy">
+        Minerals & Metallurgy
+      </option>
+      <option value="Packaging & Printing">
+        Packaging & Printing
+      </option>
+      <option value="Rubber & Plastics">Rubber & Plastics</option>
+    </optgroup>
+  </select>
+</div>
+
+
                 <label className="block mb-1 text-gray-700">
                 Message<span className="text-red-500">*</span>
                </label>

@@ -32,7 +32,7 @@ export default function App() {
     const script = document.createElement("script");
     script.id = "zsiqscript";
     script.src =
-      "https://salesiq.zohopublic.in/widget?wc=siqe847e3c4baba46abaf4dd500c4556e75e4ac48db03414d8168ab0f58be7723075ec5c9a0e79b078decd8a74e7fe289c1";
+     // "https://salesiq.zohopublic.in/widget?wc=siqe847e3c4baba46abaf4dd500c4556e75e4ac48db03414d8168ab0f58be7723075ec5c9a0e79b078decd8a74e7fe289c1";
     script.defer = true;
 
     document.body.appendChild(script);

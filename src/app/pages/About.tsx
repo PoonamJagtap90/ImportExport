@@ -6,31 +6,31 @@ export function About() {
     <div className="py-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Page Title */}
-        <div className="mb-12" style={{ marginLeft: "50px" }}>
+        <div className="mb-12 md:ml-12">
           <h1 className="text-[48px] font-semibold text-[#0b2d4d] mb-4">About Us</h1>
           <div className="w-20 h-1 bg-[#c1a23c]"></div>
         </div>
-        <div className="grid md:grid-cols-2 gap-16 items-center"> 
+     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
  
  {/* LEFT CONTENT */} 
  <div className="flex w-full">   
-  <div className="flex items-center px-16">
-    <p className="text-[16px] text-gray-600 leading-relaxed mb-29 w-[550px] text-justify"> 
+  <div className="flex items-center px-4 md:px-10 lg:px-16">
+    <p className="text-[16px] text-gray-600 leading-relaxed mb-29 w-full text-justify"> 
     Infinity Solutions is a growing service provider in the Export Import (EXIM) space, offering structured and reliable support to businesses looking to expand their global reach. Established recently, our EXIM division has been built with a clear focus on professionalism, compliance, and practical execution.
 We work closely with manufacturers, suppliers, and international partners to facilitate smooth trade operations right from identifying opportunities to supporting documentation, coordination, and process management. Our approach is grounded in attention to detail, responsiveness, and a strong understanding of evolving trade requirements.
    </p>
   </div>
   </div> 
  
- <div> 
+ <div className="-mt-30"> 
    {/* RIGHT IMAGE */} 
    <img src="src/Images/cargo-ship-navigating-ocean.jpg" 
      alt="About GlobalTrade" 
-     style={{ width: "500px", height: "400px" }}
-     className="rounded-2xl w-full h-full object-cover" 
+     
+     className="rounded-2xl w-full max-w-[500px] h-auto object-cover mx-auto" 
    /> 
  </div>
- <div className="flex items-center px-16">
+ <div className="flex items-center px-4 md:px-10 lg:px-16">
   <p className="text-[16px] text-gray-600 leading-relaxed mb-50 text-justify"> 
       
      While we are at an early stage of this journey, our commitment remains consistent: to deliver dependable service, maintain transparency, and build long-term partnerships with our clients and associates across markets.
@@ -38,12 +38,12 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
 
 </p>
  </div>
- <div className="pb-10"> 
+ <div className="-mt-40 pb-10" > 
    {/* RIGHT IMAGE */} 
    <img src="src/Images/transport-logistics-products (1).jpg" 
      alt="About GlobalTrade" 
-     style={{ width: "500px", height: "350px" }}
-     className="rounded-2xl w-full h-full object-cover" 
+     //style={{ width: "500px", height: "350px" }}
+     className="rounded-2xl w-full max-w-[500px] h-auto object-cover mx-auto" 
    /> 
  </div>
 
@@ -60,7 +60,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
         {/* Vision and Mission Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Vision Card */}
-          <div className="bg-white border border-gray-200 rounded-xl p-10 shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-10 shadow-sm">
             <div className="w-16 h-16 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
               <Eye className="w-8 h-8 text-[#c1a23c]" />
               
@@ -72,14 +72,14 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
    /> 
                 </div>
             </div>
-            <h2 className="text-[28px] font-semibold text-[#0b2d4d] mb-4">Our Vision</h2>
+            <h2 className="text-2xl md:text-[28px] font-semibold text-[#0b2d4d] mb-4">Our Vision</h2>
             <p className="text-[16px] text-gray-700 leading-relaxed">
                Shaping the future of global trade through Excellence, Trust, and Value. 
             </p>
           </div>
 
           {/* Mission Card */}
-          <div className="bg-white border border-gray-200 rounded-xl p-10 shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-10 shadow-sm">
             <div className="w-16 h-16 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
               <Target className="w-8 h-8 text-[#c1a23c]" />
 
@@ -91,7 +91,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
    /> 
                 </div>
             </div>
-            <h2 className="text-[28px] font-semibold text-[#0b2d4d] mb-4">Our Mission</h2>
+            <h2 className="text-2xl md:text-[28px] font-semibold text-[#0b2d4d] mb-4">Our Mission</h2>
             <p className="text-[16px] text-gray-700 leading-relaxed">
               We aim to provide unparalleled sourcing solutions, ensuring that our clients have access to a diverse range and high-quality products around the globe. 
               At Infinity Solutions, our mission is to revolutionize the way businesses approach international trade. 
@@ -103,7 +103,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
         <div className="mt-16 bg-gray-50 rounded-xl p-10">
         <h2 className="text-[32px] font-semibold text-[#0b2d4d] flex justify-center mb-4">Why Choose Us ?</h2>
 <h3 className="text-[12px] text-black-400 mb-10 flex justify-center">We deliver reliable, end-to-end trade solutions focused on quality, efficiency, and global standards.</h3>
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           
 <div className="flex flex-col items-center gap-4">
   <div className="flex flex-col items-center flex items-start gap-4">
@@ -146,8 +146,8 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
 <img
               src="src\Images\Why choose us.png"
               alt="Shipping"
-              style={{ width: "400px", height: "400px" }}
-              className="rounded-3xl shadow-xl w-full max-w-md object-cover"
+             
+              className="rounded-3xl shadow-xl w-full max-w-md h-auto object-cover"
             />
 </div>
 

@@ -52,66 +52,58 @@ export function Process() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Page Title */}
         <div className="mb-12 text-center">
-          <h1 className="text-[48px] font-semibold text-[#0b2d4d] mb-4">
+          <h1 className="text-3xl md:text-5xl font-semibold text-[#0b2d4d] mb-4">
             Our Trade Policy
           </h1>
           <div className="w-20 h-1 bg-[#c1a23c] mx-auto"></div>
-          <p className="text-[18px] text-gray-600 mt-6 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 mt-6 max-w-3xl mx-auto px-2">
             Our streamlined 5-step process ensures smooth and efficient international trade operations
           </p>
         </div>
 
         {/* Process Steps */}
         <div className="space-y-8 mb-16">
-          {steps.map((step, index) => {
-           // const Icon = step.icon;
-            return (
-              <div
-                key={step.number}
-                className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="flex items-start gap-8">
-                  {/* Step Number */}
-                  <div className="flex-shrink-0">
-                    <div className="text-[48px] font-bold text-[#c1a23c] opacity-30">
-                      {step.number}
-                    </div>
-                  </div>
+  {steps.map((step) => {
+    return (
+      <div
+        key={step.number}
+        className="bg-white border border-gray-200 rounded-xl p-5 md:p-8 shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
 
-                  {/* Icon */}
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-[#0b2d4d] rounded-lg flex items-center justify-center">
-                      {/*<Icon className="w-8 h-8 text-white" />*/}
-<div >
-                  <img
-                  src={step.image}
-                  alt={step.title}
-                  className="w-11 h-11 object-cover"
-                 />
-</div>
-                      
-                    </div>
-                  </div>
+          {/* Step Number */}
+          <div className="flex-shrink-0">
+            <div className="text-[36px] md:text-[48px] font-bold text-[#c1a23c] opacity-30">
+              {step.number}
+            </div>
+          </div>
 
-                  {/* Content */}
-                  <div className="flex-grow">
-                    <h3 className="text-[26px] font-semibold text-[#0b2d4d] mb-3">
-                      {step.title}
-                    </h3>
-                    <p className="text-[16px] text-gray-600 leading-relaxed max-w">
-                      {step.description}
-                    </p>
-                  </div>
+          {/* Icon */}
+          <div className="flex-shrink-0">
+            <div className="w-14 h-14 md:w-16 md:h-16 bg-[#0b2d4d] rounded-lg flex items-center justify-center">
+              <img
+                src={step.image}
+                alt={step.title}
+                className="w-8 h-8 md:w-11 md:h-11 object-cover"
+              />
+            </div>
+          </div>
 
-                  {/* Connector Line (except for last item) */}
-                 {/* {index < steps.length - 1 && (
-                    <div className="absolute left-[104px] w-0.5 h-16 bg-gray-200 mt-20" />
-                  )}*/}
-                </div>
-              </div>
-            );
-          })}
+          {/* Content */}
+          <div className="flex-grow">
+            <h3 className="text-[20px] md:text-[26px] font-semibold text-[#0b2d4d] mb-3">
+              {step.title}
+            </h3>
+
+            <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed">
+              {step.description}
+            </p>
+          </div>
         </div>
+      </div>
+    );
+  })}
+</div>
 
         {/* Timeline Visual Alternative */}
        {/* <div className="bg-gradient-to-r from-[#0b2d4d] to-[#1e293b] rounded-xl p-10 text-white">
