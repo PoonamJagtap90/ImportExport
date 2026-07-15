@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import axios from 'axios';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { useState } from 'react';
 
 
 export function Contact() {
@@ -89,7 +89,7 @@ export function Contact() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Page Title */}
         <div className="mb-12">
-          <h1 className="text-[48px] font-semibold text-[#0b2d4d] mb-4">Contact Us</h1>
+          <h1 className="text-[48px] font-semibold text-[#0b2d4d] mb-4">Contact Us test</h1>
           <div className="w-20 h-1 bg-[#c1a23c]"></div>
           <p className="text-[18px] text-gray-600 mt-6 max-w-full">
             Get in touch with our team for inquiries, quotes, or support. We're here to help you succeed in international trade.
