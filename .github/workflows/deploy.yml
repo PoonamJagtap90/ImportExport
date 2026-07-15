@@ -1,0 +1,35 @@
+name: Deploy Node backend to cPanel
+
+on:
+  push:
+    branches:
+      - backend
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Stage deployable files
+        run: |
+          mkdir -p deploy/template
+          cp server.js package.json package-lock.json deploy/
+          cp template/enquiry.hbs deploy/template/
+          mkdir -p deploy/tmp
+          date > deploy/tmp/restart.txt
+
+      - name: Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          ssh_private_key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          local_path: './deploy/*'
+          remote_path: ${{ secrets.BACKEND_REMOTE_PATH }}
