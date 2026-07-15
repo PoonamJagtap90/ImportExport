@@ -32,10 +32,8 @@ export function Contact() {
     try {
       // Send actual form data
       const response = await axios.post(
-        'http://theinfinitysolutions.co/api/contact',
-        //'http://localhost:5000/api/contact', // Replace with your backend route
+        `${import.meta.env.VITE_API_URL}/contact`,
         formData
-        
       );
 
       console.log('Server response:', response.data);

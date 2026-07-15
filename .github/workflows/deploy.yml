@@ -1,17 +1,15 @@
-name: Deploy Vite to GitHub Pages
+name: Deploy Vite to cPanel
 
 on:
   push:
     branches:
-      - main
+      - frontend
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,18 +22,17 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build
         run: npm run build
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          path: ./dist
-
-      - name: Deploy
-        uses: actions/deploy-pages@v4
+          server: ${{ secrets.SFTP_HOST }}
+          port: ${{ secrets.SFTP_PORT }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          ssh_private_key: ${{ secrets.SFTP_PRIVATE_KEY }}
+          local_path: './dist/*'
+          remote_path: ${{ secrets.SFTP_REMOTE_PATH }}
