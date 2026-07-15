@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
+import { images } from '../../lib/images';
 
 
 export function Contact() {
@@ -111,7 +112,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-[#c1a23c]" />
  <div className="flex justify-center mr-4">
-                   <img src="src/Images/pin.png" 
+                   <img src={images['pin.png']}
      alt="About GlobalTrade" 
      style={{ width: "50px", height: "30px" }}
      //className="rounded-2xl shadow-lg w-full object-cover" 
@@ -133,7 +134,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Phone className="w-6 h-6 text-[#c1a23c]" />
                   <div className="flex justify-center mr-4">
-                   <img src="src/Images/phone-call.png" 
+                   <img src={images['phone-call.png']}
      alt="About GlobalTrade" 
      style={{ width: "50px", height: "30px" }}
      //className="rounded-2xl shadow-lg w-full object-cover" 
@@ -153,7 +154,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Mail className="w-6 h-6 text-[#c1a23c]" />
                    <div className="flex justify-center mr-4">
-                   <img src="src/Images/email.png" 
+                   <img src={images['email.png']}
      alt="About GlobalTrade" 
      style={{ width: "30px", height: "30px" }}
      //className="rounded-2xl shadow-lg w-full object-cover" 

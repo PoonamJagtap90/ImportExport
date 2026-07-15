@@ -1,26 +1,27 @@
 import { Wheat, Apple, Factory, Cog, ShoppingBag } from 'lucide-react';
+import { images } from '../../lib/images';
 
 export function Products() {
   const products = [
     {
-      
-      image: 'src/Images/Agriculture.jpg',
+
+      image: images['Agriculture.jpg'],
       title: 'Agricultural Products',
       description: 'Grains, pulses, spices, and organic farming produce',
-      
+
     },
     {
-      image: 'src/Images/FMCG Products.png',
+      image: images['FMCG Products.png'],
       title: 'FMCG',
       description: 'Packaged foods, beverages, and consumer goods',
     },
     {
-      image: 'src/Images/Generator.png',
+      image: images['Generator.png'],
       title: 'Electrical Equipment Supplies',
       description: 'Metals, chemicals, polymers, and construction materials',
     },
      {
-      image: 'src/Images/hugo-clement-JGtPrdnMgQc-unsplash.jpg',
+      image: images['hugo-clement-JGtPrdnMgQc-unsplash.jpg'],
       title: 'High-quality A-grade thrift clothing and cream bales',
       description: 'We ensure that each bale contains garments with strong market demand and good visual appeal for thrift stores and wholesale markets.',
     },

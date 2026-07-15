@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Globe2, Shield, TrendingUp, Package, Plane, Truck } from 'lucide-react';
-//import HomeBackgroundImg from '../Images/HomeBackgroundImage.jpg';
+import { images } from '../../lib/images';
 
-const teamMembers = 
-[ { name: "Shalaka Bhosale", role: "HR Head", image: "src/Images/Shalaka.png", },
-   { name: "Shardul Kulkarni", role: "Sales & Operation", image: "src/Images/Shardul Sir.JPG", }, 
-   { name: "Sharayu Kulkarni", role: "Administrator", image: "src/Images/Sharayu Ma'am.png", }, 
-   { name: "Yash Paranjape", role: "Business Development Associate", image: "src/Images/Yash (2) 1.png", }, ]; 
+const teamMembers =
+[ { name: "Shalaka Bhosale", role: "HR Head", image: images['Shalaka.png'], },
+   { name: "Shardul Kulkarni", role: "Sales & Operation", image: images['Shardul Sir.JPG'], },
+   { name: "Sharayu Kulkarni", role: "Administrator", image: images["Sharayu Ma'am.png"], },
+   { name: "Yash Paranjape", role: "Business Development Associate", image: images['Yash (2) 1.png'], }, ];
 
 export function Home() {
   return (
@@ -31,7 +31,7 @@ export function Home() {
 
           backgroundImage:
 
-            "url('src/Images/shipping-port-sunset-cargo-airplanes-trucks.jpg')", // move your image to public/images
+            `url('${images['shipping-port-sunset-cargo-airplanes-trucks.jpg']}')`,
 
         }}
 ></div>
@@ -77,7 +77,7 @@ export function Home() {
               <div className="w-14 h-14 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
                 <TrendingUp className="w-7 h-7 text-[#c1a23c] items-centre" />
                 <div className="flex justify-center mr-4">
-                 <img src="src/Images/End-to-end support.png" 
+                 <img src={images['End-to-end support.png']}
                 alt="About GlobalTrade" 
                 className="w-10 h-auto"
                 /> 
@@ -96,7 +96,7 @@ export function Home() {
               <div className="w-14 h-14 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
                 <Globe2 className="w-7 h-7 text-[#c1a23c]" />
 <div className="flex justify-center mr-4">
-   <img src="src/Images/Global Trade.png" 
+   <img src={images['Global Trade.png']}
      alt="About GlobalTrade" 
      className="w-10 h-auto"
      //className="rounded-2xl shadow-lg w-full object-cover" 
@@ -117,7 +117,7 @@ export function Home() {
               <div className="w-14 h-14 bg-[#c1a23c] bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-7 h-7 text-[#c1a23c]"/>
                 <div className="flex justify-center mr-4">
-                   <img src="src/Images/Compliance.png" 
+                   <img src={images['Compliance.png']}
      alt="About GlobalTrade" 
     className="w-10 h-auto"
      //className="rounded-2xl shadow-lg w-full object-cover" 
@@ -154,7 +154,7 @@ export function Home() {
            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
               
               <div>
-                <img src="src\Images\Export.png" 
+                <img src={images['Export.png']}
      alt="About GlobalTrade" 
      className="w-full max-w-[200px] h-auto mx-auto" 
    />
@@ -179,7 +179,7 @@ export function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
               
               <div>
-                <img src="src\Images\Import.png" 
+                <img src={images['Import.png']}
      alt="About GlobalTrade" 
 className="w-full max-w-[200px] h-auto mx-auto"
    />

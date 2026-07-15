@@ -1,5 +1,6 @@
 import { Target, Eye } from 'lucide-react';
 import { Truck, Star, FileText, Link as LinkIcon } from "lucide-react";
+import { images } from '../../lib/images';
 
 export function About() {
   return (
@@ -24,7 +25,7 @@ We work closely with manufacturers, suppliers, and international partners to fac
  
  <div className="-mt-30"> 
    {/* RIGHT IMAGE */} 
-   <img src="src/Images/cargo-ship-navigating-ocean.jpg" 
+   <img src={images['cargo-ship-navigating-ocean.jpg']}
      alt="About GlobalTrade" 
      
      className="rounded-2xl w-full max-w-[500px] h-auto object-cover mx-auto" 
@@ -40,7 +41,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
  </div>
  <div className="-mt-40 pb-10" > 
    {/* RIGHT IMAGE */} 
-   <img src="src/Images/transport-logistics-products (1).jpg" 
+   <img src={images['transport-logistics-products (1).jpg']}
      alt="About GlobalTrade" 
      //style={{ width: "500px", height: "350px" }}
      className="rounded-2xl w-full max-w-[500px] h-auto object-cover mx-auto" 
@@ -65,7 +66,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
               <Eye className="w-8 h-8 text-[#c1a23c]" />
               
               <div className="flex justify-center mr-4">
-                   <img src="src/Images/Vision 1.png" 
+                   <img src={images['Vision 1.png']}
      alt="About GlobalTrade" 
      style={{ width: "110px", height: "90px" }}
      //className="rounded-2xl shadow-lg w-full object-cover" 
@@ -84,7 +85,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
               <Target className="w-8 h-8 text-[#c1a23c]" />
 
                 <div className="flex justify-center mr-4">
-                   <img src="src/Images/Mission 1.png" 
+                   <img src={images['Mission 1.png']}
      alt="About GlobalTrade" 
      style={{ width: "110px", height: "90px" }}
      //className="rounded-2xl shadow-lg w-full object-cover" 
@@ -108,7 +109,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
 <div className="flex flex-col items-center gap-4">
   <div className="flex flex-col items-center flex items-start gap-4">
   <img
-    src="src/Images/fast.png"
+    src={images['fast.png']}
     alt="Shipping"
     className="w-12 h-12 object-cover rounded"/>
   <p className="text-gray-600 text-[16px]">
@@ -125,7 +126,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
 
 <div className="flex flex-col items-center flex items-start gap-4">
 <img
-    src="src/Images/global.png"
+    src={images['global.png']}
     alt="Shipping"
     className="w-12 h-12 object-cover rounded"
   />
@@ -144,7 +145,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
                     {/* CENTER IMAGE */}
 <div className="flex justify-center">
 <img
-              src="src\Images\Why choose us.png"
+              src={images['Why choose us.png']}
               alt="Shipping"
              
               className="rounded-3xl shadow-xl w-full max-w-md h-auto object-cover"
@@ -154,7 +155,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
 <div className="flex flex-col items-center gap-4">
   <div className="flex flex-col items-center flex items-start gap-4">
   <img
-    src="src/Images/best-seller (1).png"
+    src={images['best-seller (1).png']}
     alt="Shipping"
     className="w-12 h-12 object-cover rounded"/>
   <p className="text-gray-600 text-[16px]">
@@ -171,7 +172,7 @@ At Infinity Solutions, we aim to simplify global trade by being a reliable and e
 
 <div className="flex flex-col items-center flex items-start gap-4">
 <img
-    src="src/Images/transparency (1).png"
+    src={images['transparency (1).png']}
     alt="Shipping"
     className="w-12 h-12 object-cover rounded"
   />

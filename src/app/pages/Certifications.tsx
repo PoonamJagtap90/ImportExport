@@ -1,52 +1,53 @@
 import { Award, BadgeCheck, Shield, FileCheck } from 'lucide-react';
+import { images } from '../../lib/images';
 
 export function Certifications() {
   const certifications = [
     {
-      image: 'src/Images/import-export-code-iec-license-removebg-preview.png',
+      image: images['import-export-code-iec-license-removebg-preview.png'],
       title: 'IEC CERTIFICATE',
       description: 'Importer Exporter Code (IEC)',
       pdf: 'src/app/pages/Certificates/IECcertificate.pdf'
 
     },
     {
-      image: 'src/Images/Apeda.png',
+      image: images['Apeda.png'],
       title: 'APEDA CERTIFICATE',
       description: 'Agricultural and Processed Food Products Export',
       pdf: 'src/app/pages/Certificates/Apeda_Certificate[1].pdf'
     },
     {
-      image: 'src/Images/FIEO_Logo_Trans-removebg-preview.png',
+      image: images['FIEO_Logo_Trans-removebg-preview.png'],
       title: 'FIEO CERTIFICATE',
       description: 'Federation of Indian Export Organisations (FIEO)',
       pdf: 'src/app/pages/Certificates/Fieo Certificate-2026.pdf'
     },
     {
-      image: 'src/Images/Fssai-removebg-preview.png',
+      image: images['Fssai-removebg-preview.png'],
       title: 'FSSAI CERTIFICATE',
       description: 'Food Safety and Standards Authority of India',
       pdf: 'src/app/pages/Certificates/Food Safety and Standards Authority of India.pdf'
     },
     {
-      image: 'src/Images/MSME_Certificate-removebg-preview.png',
+      image: images['MSME_Certificate-removebg-preview.png'],
       title: 'MSME CERTIFICATE',
       description: 'Ministry of Micro, Small and Medium Enterprises',
       pdf: 'src/app/pages/Certificates/MSME -Udyam Registration Certificate-trading.pdf'
     },
     {
-      image: 'src/Images/MCCI-removebg-preview.png',
+      image: images['MCCI-removebg-preview.png'],
       title: 'MCCIA CERTIFICATE',
       description: 'Mahratta Chamber of Commerce, Industries and Agriculture',
       pdf: 'src/app/pages/Certificates/MCCIA_INFINITY SOLUTIONS.pdf'
     },
     {
-      image: 'src/Images/ISO_9001-2015.svg-removebg-preview (3).png',
+      image: images['ISO_9001-2015.svg-removebg-preview (3).png'],
       title: 'ISO CERTIFICATE',
       description: 'International Organization for Standardization',
       pdf: 'src/app/pages/Certificates/ISO Certificate.pdf'
     },
     {
-      image: 'src/Images/DUNS Number.png',
+      image: images['DUNS Number.png'],
       title: 'D-U-N-S NUMBER',
       description: 'Data Universal Numbering System',
       pdf: 'src/app/pages/Certificates/D-U-N-S 1.pdf',

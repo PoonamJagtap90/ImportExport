@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { images } from '../../lib/images';
 
 export function Header() {
   const location = useLocation();
@@ -27,7 +28,7 @@ export function Header() {
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <img
-              src="src/Images/infinity-logo-png.png"
+              src={images['infinity-logo-png.png']}
               className="h-10 w-auto"
               alt="Logo"
             />

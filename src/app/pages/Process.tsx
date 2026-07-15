@@ -1,50 +1,51 @@
 import { Search, Handshake, FileText, Ship, CheckCircle } from 'lucide-react';
+import { images } from '../../lib/images';
 
 export function Process() {
   const steps = [
     {
-      image: 'src/Images/Requirement Assesment.png',
+      image: images['Requirement Assesment.png'],
       number: '01',
       title: 'Requirement Assessment',
       description: 'At Infinity Solutions, we start with a structured requirement assessment to understand your exact product, quality, compliance, timeline, and budget needs. This helps us source reliable suppliers and ensure smooth, cost-effective, and timely international trade solutions.',
     },
     {
-      image: 'src/Images/Sourcing & Quotation.png',
+      image: images['Sourcing & Quotation.png'],
       number: '02',
       title: 'Sourcing & Quotation',
       description: 'At Infinity Solutions, we source from verified and reliable suppliers who meet international quality, compliance, and delivery standards, ensuring consistency and supply stability. We provide transparent, detailed quotations covering specifications, pricing, logistics, and timelines, giving you complete clarity and confidence in every transaction.',
     },
     {
-      image: 'src/Images/Order Confirmation.png',
+      image: images['Order Confirmation.png'],
       number: '03',
       title: 'Order Confirmation',
       description: 'Once pricing, specifications, and terms are agreed upon, Infinity Solutions issues a detailed proforma invoice to confirm the order and ensure clarity for all parties.This structured process secures production, minimizes risks, and enables smooth, accurate, and timely order fulfillment.',
     },
     {
-      image: 'src/Images/Payments.png',
+      image: images['Payments.png'],
       number: '04',
       title: 'Payments',
       description: 'At Infinity Solutions, our payment terms ensure security, transparency, and smooth trade execution, aligned with international practices to protect both buyers and suppliers.We use secure banking channels and flexible options like advance payments or letters of credit, building trust and supporting long-term trade relationships.',
     },
     {
-      image: 'src/Images/Quality-inspection.png',
+      image: images['Quality-inspection.png'],
       number: '05',
       title: 'Quality Inspection & Documentation',
       description: ' At Infinity Solutions, we ensure strict quality inspections and, when required, third-party verification to confirm product standards, packaging, and compliance before shipment.We also manage complete and accurate documentation to enable smooth customs clearance, minimize risks, and ensure reliable, transparent trade execution.',
     },
       {
-      image: 'src/Images/Shipping & Customs Clearance.png',
+      image: images['Shipping & Customs Clearance.png'],
       number: '06',
       title: 'Shipping & Customs Clearance:',
       description: 'Infinity Solutions manages end-to-end shipping and customs clearance, coordinating with trusted logistics partners to ensure cost-effective, compliant, and timely global deliveries.Our proactive approach minimizes delays, handles documentation and regulations, and ensures smooth cargo movement from dispatch to final delivery.',
     },
    {
-      image: 'src/Images/Final Delivery.png',
+      image: images['Final Delivery.png'],
       number: '07',
       title: 'Final Delivery',
       description: 'At Infinity Solutions, we ensure safe and timely final delivery by coordinating closely with logistics partners and monitoring last-mile transportation and documentation.Our structured approach ensures accountability, product integrity, and a smooth handover, delivering complete transparency and client satisfaction.',
    },
-   
+
     ];
 
   return (

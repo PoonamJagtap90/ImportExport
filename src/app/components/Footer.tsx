@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { images } from '../../lib/images';
 
 export function Footer() {
   return (
@@ -13,7 +14,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="src/Images/infinity-logo-png.png"
+                src={images['infinity-logo-png.png']}
                 alt="Infinity Solutions"
                 className="h-10 w-auto"
               />
